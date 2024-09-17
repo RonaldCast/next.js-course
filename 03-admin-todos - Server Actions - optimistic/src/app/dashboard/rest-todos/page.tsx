@@ -1,8 +1,10 @@
+export const dynamic = 'force-dynamic' // no storage cache If the components has changed this for to reload 
+export const revalidate = 0 // force to render always the page. 
+
 import prisma from "@/lib/prisma";
 import { TodosGrid } from "@/todos";
 import { NewTodo } from "@/todos/components/NewTodo";
 
-import * as api from "@/todos/helpers/todos"
 
 export default async function RestTodoPage() {
 
